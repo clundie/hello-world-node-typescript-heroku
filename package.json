@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "4.9.8",
+    "typescript": "1.3.0"
+  },
+  "description": "hello-world-node-typescript-heroku",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "main": "index.js",
+  "name": "hello-world-node-typescript-heroku",
+  "private": true,
+  "scripts": {
+    "start": "./node_modules/.bin/tsc --module commonjs --outDir build/ --noImplicitAny --sourceMap --target ES5 lib/index.ts && node build/index.js"
+  },
+  "version": "0.0.1"
+}
